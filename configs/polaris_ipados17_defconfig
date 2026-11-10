@@ -16,7 +16,8 @@ CONFIG_XNU_CRYPTO_BOOTSTRAP="prelinked"
 CONFIG_XNU_NATIVE_UFS=y
 CONFIG_XNU_POLARIS_HID_INPUT=y
 CONFIG_XNU_NATIVE_ADRENO=n
-CONFIG_XNU_NATIVE_LEGACY_DISPLAY=y   # CPU scanout / framebuffer console (libPolarisDisplayRuntime.a)
+# CPU scanout / framebuffer console (libPolarisDisplayRuntime.a)
+CONFIG_XNU_NATIVE_LEGACY_DISPLAY=y
 CONFIG_XNU_ARMVIRT_PLATFORM=n
 
 # ---- SHNGROOT + verified root ----
