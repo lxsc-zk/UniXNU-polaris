@@ -19,7 +19,7 @@ CONFIG_XNU_NATIVE_ADRENO=n
 # Kernel console needs build/native-legacy-display/libNativeLegacyDisplay.late.a
 # (baseline scripts/build-native-legacy-display.py); polaris has its own
 # libPolarisDisplayRuntime.a instead, so this stays off until ported.
-CONFIG_XNU_NATIVE_LEGACY_DISPLAY=n
+CONFIG_XNU_NATIVE_LEGACY_DISPLAY=y
 CONFIG_XNU_ARMVIRT_PLATFORM=n
 
 # ---- SHNGROOT + verified root ----
