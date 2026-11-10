@@ -18,3 +18,25 @@ CONFIG_XNU_POLARIS_HID_INPUT=y
 CONFIG_XNU_NATIVE_ADRENO=n
 CONFIG_XNU_NATIVE_LEGACY_DISPLAY=n
 CONFIG_XNU_ARMVIRT_PLATFORM=n
+
+# ---- SHNGROOT + verified root ----
+# SHNGROOT windows; root volume selected by UUID
+# CONFIG_XNU_VERIFIED_ROOT_PROBE=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# compare mounted root device with the verified root
+# CONFIG_XNU_OWNER_ROOT_AUDIT=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# use the owner root in trust mode
+# CONFIG_XNU_OWNER_ROOT_TRUST=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# mount the owner cache
+# CONFIG_XNU_OWNER_CACHE_MOUNT=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# owner cache startup stage
+# CONFIG_XNU_OWNER_CACHE_STARTUP=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# publish the owner boot manifest
+# CONFIG_XNU_OWNER_BOOT_MANIFEST=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# 4 KiB code-signing hash cache
+# CONFIG_XNU_NATIVE_CS_HASH_CACHE=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# Data volume (ramdisk seed)
+# CONFIG_XNU_NATIVE_RAM_BLOCK=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# volume-level AES
+# CONFIG_XNU_NATIVE_AES=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????
+# boot progress diagnostics
+# CONFIG_XNU_BOOT_PROGRESS=y   # ???: VerifiedRoot / SoftwareAES / RamBlock ?????

@@ -61,6 +61,10 @@ tool = "scripts/make-polaris-adt.py"
 owned_memory_size = "0x40000000"
 cpu_regs = "0"
 psci_method = "smc"
+# APFS root volume inside the OS window of the SHNGROOT userdata image.
+# Resolved from the 17.7.11 OS container: volume
+# "DawnUpdate21H461.J120J121J207J208OS".
+root_match_volume_uuid = "04769D26-2CA0-4825-B443-E2E5F88300F2"
 
 [port]
 stage = "platform"
