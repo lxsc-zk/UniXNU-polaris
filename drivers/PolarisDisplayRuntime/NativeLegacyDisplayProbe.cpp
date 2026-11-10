@@ -229,8 +229,4 @@ native_legacy_display_late_probe(void)
 	return 0;
 }
 
-extern "C" int
-native_mobile_graphics_client_probe(void)
-{
-	return 0;
-}
+/* native_mobile_graphics_client_probe is provided by IOUserClient.cpo. */

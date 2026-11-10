@@ -20,11 +20,11 @@ import struct
 import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCES = ('drivers/GopFramebuffer/PolarisCpuScanout.cpp',
-           'drivers/PolarisDisplayRuntime/PolarisDisplayRuntime.cpp',
-           'drivers/PolarisDisplayRuntime/NativeLegacyDisplayProbe.cpp')
-HEADERS = ('drivers/GopFramebuffer/PolarisCpuScanout.h',
-           'drivers/PolarisDisplayRuntime/PolarisDisplayRuntime.h')
+# Only the probe translation unit: polaris already links
+# libPolarisDisplayRuntime.a (build-polaris-display.py), so compiling those
+# sources here would duplicate every exported display symbol.
+SOURCES = ('drivers/PolarisDisplayRuntime/NativeLegacyDisplayProbe.cpp',)
+HEADERS = ('drivers/PolarisDisplayRuntime/NativeLegacyDisplayProbe.cpp',)
 OUT_DIR = 'build/native-legacy-display'
 ARCHIVE = 'libNativeLegacyDisplay.late.a'
 
