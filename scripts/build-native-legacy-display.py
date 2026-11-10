@@ -21,7 +21,8 @@ import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ('drivers/GopFramebuffer/PolarisCpuScanout.cpp',
-           'drivers/PolarisDisplayRuntime/PolarisDisplayRuntime.cpp')
+           'drivers/PolarisDisplayRuntime/PolarisDisplayRuntime.cpp',
+           'drivers/PolarisDisplayRuntime/NativeLegacyDisplayProbe.cpp')
 HEADERS = ('drivers/GopFramebuffer/PolarisCpuScanout.h',
            'drivers/PolarisDisplayRuntime/PolarisDisplayRuntime.h')
 OUT_DIR = 'build/native-legacy-display'
